@@ -10,8 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/estilo.css">
-    <title>Viverei - Home</title>
+    <link rel="stylesheet" href="./css/estilo.css">    
+    <title>Viverei - Cadastro</title>
 
 
 </head>
@@ -77,8 +77,10 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item corfonte subDrop" href="./cadastro.html">Cadastre-se</a>
+                                        <li><a class="dropdown-item corfonte subDrop"
+                                                href="./cadastro.html">Cadastre-se</a>
                                         </li>
+                                        <li></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -92,80 +94,45 @@
             </nav>
 
         </div>
+    </div>
 
-        <!--Primeira Imagem-->
-        <div class="firstImage"><img src="./img/passarosVoamPraia.jpg" alt="Nascer do Sol" class="firstBanner"></div>
-
-        <!--Textos-->
-        <div class="text1">
-            <h2>Texto 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel aliquet urna. Sed est enim, tristique
-                ut imperdiet ut, semper ut eros. Fusce in est quis nisi laoreet cursus dapibus porta velit. In bibendum
-                diam
-                enim, ac imperdiet urna dictum in. Aliquam nec nulla id magna semper sodales non id nisi. Vestibulum
-                aliquam purus ac risus vulputate mattis. Vivamus porta, nisi at blandit facilisis, mauris risus bibendum
-                lectus,
-                sed rutrum lectus massa blandit eros. Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per
-                inceptos himenaeos. Nam elementum ornare enim, eu maximus diam euismod sed. Sed eget aliquam massa.
-                Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod, ligula ac vulputate tincidunt,
-                massa
-                erat ultrices turpis, non rutrum risus sapien eu ante. Donec justo nulla, tempor ac odio id, dignissim
-                cursus justo. Praesent vel malesuada tortor, nec hendrerit est. Nullam sapien augue, convallis nec ipsum
-                quis, tincidunt eleifend justo. Nulla tempor posuere leo, vel venenatis erat lobortis non.</p>
-        </div>
-        <div class="text2">
-            <h2>Texto 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel aliquet urna. Sed est enim, tristique
-                ut imperdiet ut, semper ut eros. Fusce in est quis nisi laoreet cursus dapibus porta velit. In bibendum
-                diam
-                enim, ac imperdiet urna dictum in. Aliquam nec nulla id magna semper sodales non id nisi. Vestibulum
-                aliquam purus ac risus vulputate mattis. Vivamus porta, nisi at blandit facilisis, mauris risus bibendum
-                lectus,
-                sed rutrum lectus massa blandit eros. Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per
-                inceptos himenaeos. Nam elementum ornare enim, eu maximus diam euismod sed. Sed eget aliquam massa.
-                Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod, ligula ac vulputate tincidunt,
-                massa
-                erat ultrices turpis, non rutrum risus sapien eu ante. Donec justo nulla, tempor ac odio id, dignissim
-                cursus justo. Praesent vel malesuada tortor, nec hendrerit est. Nullam sapien augue, convallis nec ipsum
-                quis, tincidunt eleifend justo. Nulla tempor posuere leo, vel venenatis erat lobortis non.</p>
-        </div>
-
-        <!--Segunda Imagem-->
-        <div class="secondImage"><img src="./img/porDoSol.jpg" alt="Nascer do Sol" class="firstBanner"></div>
-
-        <!--Cartões-->
-        <div class="cartoes">
-            <div class="flexB">
-                <div class="cartao">
-                    <div><img src="./img/Logo_viverei.png" alt="Logo_viverei" class="logoCard"></div>
-                    <div><img src="./img/nascer_do_solII.jpg" alt="" class="imageCard"></div>
-                    <div class="textCard">
-                        <h2>Cartão 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel aliquet urna. Sed est
-                            enim, tristique ut imperdiet ut, semper ut eros. Fusce in est quis nisi laoreet cursus
-                            dapibus porta velit. In bibendum diam enim</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div><img src="./img/Logo_viverei.png" alt="Logo_viverei" class="logoCard"></div>
-                    <div><img src="./img/nascer_do_solI.jpg" alt="" class="imageCard"></div>
-                    <div class="textCard">
-                        <h2>Cartão 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel aliquet urna. Sed est
-                            enim, tristique ut imperdiet ut, semper ut eros. Fusce in est quis nisi laoreet cursus
-                            dapibus porta velit. In bibendum diam enim</p>
-                    </div>
-                </div>
-            </div>
+        <!--Formulário-->
+        <br><h2>Formulário</h2><br>
+        <div class="contForm">
+            <form onsubmit="return cadastrar();">
+                <ul class="contFlex">
+                    <li><label>Nome: </label><input class="form-control me-2" type="text" id="fNom"
+                            placeholder="Informe o nome" size="" required></li>
+                    <li><label>CPF/CNPJ: </label><input class="form-control me-2" type="text" id="fCpf"
+                            placeholder="Informe o CPF ou CNPJ" size="" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}|\d{11}" required></li>
+                    <li><label>Telefone: </label><input class="form-control me-2" type="text" id="fFon"
+                            placeholder="XX XXXX-XXXX" size="" pattern="\d{2}\s\d{4}-\d{4}|\d{10}" required></li>
+                    <li><label>Celular: </label><input class="form-control me-2" type="text" id="fCel"
+                            placeholder="XX XXXXX-XXXX" size="" pattern="\d{2}\s\d{5}-\d{4}|\d{11}" required></li>
+                    <li><label>Cep: </label><input class="form-control me-2" type="text" id="fCep"
+                            placeholder="XXXXX-XXX" size="" maxlength="9" onblur="pesquisacep(this.value);"
+                            pattern="\d{5}-\d{3}|\d{8}" required></li>
+                    <li><label>Logradouro: </label><input class="form-control me-2" type="text" id="fLog"
+                            placeholder="" size="" disabled></li>
+                    <li><label>Número: </label><input class="form-control me-2" type="text" id="fNum"
+                            placeholder="Informe o número" size="" required></li>
+                    <li><label>Complemento: </label><input class="form-control me-2" type="text" id="fCom"
+                            placeholder="Informe o complemento" size="" required></li>
+                    <li><label>Bairro: </label><input class="form-control me-2" type="text" id="fBai" placeholder=""
+                            size="" disabled></li>
+                    <li><label>Cidade: </label><input class="form-control me-2" type="text" id="fCid" placeholder=""
+                            size="" disabled></li>
+                    <li><label>Estado: </label><input class="form-control me-2" type="text" id="fEst" placeholder=""
+                            size="" disabled></li>
+                    <li><br><button class="btn btn-outline-primary botaoCad" type="submit">Cadastrar</button></li>                                                        
+            </form>
         </div>
 
         <!--Rodapé-->
+    <div class="gridL">
         <div class="rodape">
             <p>© Viverei - Todos os direitos reservados.</p>
+
         </div>
         <div class="links2">
             <div class="flexC">
@@ -175,8 +142,14 @@
                 <div class="link"><a href="#"><img src="img/localizacao.png" alt="" class="icone"></a></div>
             </div>
         </div>
+    </div>
+
+
+
 
     </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
@@ -185,6 +158,7 @@
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+
 
 </body>
 

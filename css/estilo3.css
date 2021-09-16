@@ -1,0 +1,63 @@
+.topo{
+    background-color: rgb(55, 96, 146);
+}
+.cor-menu{
+    background-color: rgb(248, 249, 250);    
+}
+body p{
+    color: rgb(55, 96, 146);
+    text-align: justify;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.8em;
+    color: rgb(208, 26, 78);
+    text-align: center;
+}
+span{
+    font-size: 1.1em;
+    color: rgb(208, 26, 78);
+}
+.imagem {
+    max-width: 80%; 
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-left: 50%;
+    margin-right: 50%;        
+}
+.menu {
+    background-color: white;  
+}
+.corfonte {
+    color:rgb(208, 26, 78);    
+}
+.icone{
+    max-height: 18px;
+    align-items: flex-end;
+    padding-bottom: 2px;
+}
+li a:hover {
+    background-color: rgb(55, 96, 146);
+    color: white;
+}
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+  }
+  
+figcaption {
+    background-color: rgb(55, 96, 146);
+    color: white;
+    font-style: serif;
+    padding: 2px;
+    text-align: center;
+}
+.imagens{
+    max-height: 450px;
+}
+.larg-card{
+    width: 100%;
+}
